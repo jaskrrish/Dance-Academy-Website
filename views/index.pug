@@ -1,0 +1,55 @@
+//- index.pug
+doctype html
+html
+  head
+    title Jas Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo 
+                img(src="/static/img/logo.png")
+                h2 JDA
+            li #[a(href="/") Home]  
+            li #[a(href="/") About Us] 
+            li #[a(href="/") Services] 
+            li #[a(href="/") Class info] 
+            li #[a(href="/") Contact us]  
+    section#introSection 
+        div Welcome to Jas Dance Academy   
+        div.small Any Body Can Dance 
+    section#missionSection 
+        h2 Our Mission   
+        div.card 
+            h3 Dance Perfection  
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/1.png")
+                div.card-content 
+                    p This is the best dance academy universe
+        div.card 
+            h3 Dance to express
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/2.png")
+                div.card-content 
+                    p This is the best dance academy universe
+        div.card 
+            h3 Expert Teaching
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/3.png") 
+                div.card-content 
+                    p This is the best dance academy universe
+    section#sponsorsSection 
+        h2 Our Sponsors   
+        div#sponsors 
+            img(src="/static/img/apple2-removebg-preview.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/mic-removebg-preview.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/hp-removebg-preview (1).png", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/skype-removebg-preview.png", alt="Sponsor Image", class="spImage")
+    footer#footer
+        | Copyright &copy 2023 jasdanceacademy.com | All rights Reserved
+    script
+      include ../static/index.js
